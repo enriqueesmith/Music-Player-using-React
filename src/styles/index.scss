@@ -1,0 +1,73 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+
+.container{
+    background: black;
+    color: #8b918f;
+    width: 900px;
+    height: 700px;
+    padding: 0;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+}
+
+.title{
+    color: white;
+}
+
+.MusicPlayerControls{
+    background: #242827;
+    text-align: left;
+}
+
+hr{
+    background: #242827;
+    margin: 0;
+}
+
+.MusicList{
+    text-align: left;
+}
+
+.trackNumber{
+    margin-left: 10px;
+    margin-right: 30px;
+    width: 12px;
+    text-align: left;
+}
+
+.tracksToPlay{
+    padding: 10px;
+}
+
+.MusicList:hover{
+    background: #242827;
+    cursor: pointer;
+}
+
+:focus{
+    background: #242827;
+    cursor: pointer;
+}
+
+
+.controlIcons{
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.playIcon{
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.pauseIcon{
+    display: none;
+}
