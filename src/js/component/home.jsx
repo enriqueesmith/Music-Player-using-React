@@ -49,7 +49,7 @@ export class Home extends React.Component {
 						<div
 							className="MusicList"
 							key={index}
-							onClick={() => this.playSong(elem.url)}>
+							onClick={e => this.playSong(elem.url)}>
 							<div className="tracksToPlay">
 								<span className="trackNumber">{index + 1}</span>
 								<span className="title">{elem.name} </span>
