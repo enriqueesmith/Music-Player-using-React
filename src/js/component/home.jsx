@@ -28,14 +28,10 @@ export class Home extends React.Component {
 			"http://assets.breatheco.de/apis/sound/" +
 			url.replace("data", "files");
 		this.url.play();
-		this.playBtn.style.display = "none";
-		this.pauseBtn.style.display = "inline-block";
 	};
 
 	pauseSong = () => {
 		this.url.pause();
-		this.playBtn.style.display = "inline-block";
-		this.pauseBtn.style.display = "none";
 	};
 	/*
 	

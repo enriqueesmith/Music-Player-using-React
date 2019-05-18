@@ -56,7 +56,11 @@ hr{
     font-size: 30px;
     margin-left: 40px;
     margin-right: 40px;
-    height: 40px;
+    padding: 10px;
+}
+
+.controlIcons:hover{
+    cursor: pointer;
 }
 
 
