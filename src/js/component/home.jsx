@@ -5,29 +5,8 @@ export class Home extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			songs: [
-				{
-					title: "Mario Castle",
-					id: "mario",
-					author: "Bowser",
-					url:
-						"https://assets.breatheco.de/apis/sound/files/mario/songs/castle.mp3"
-				},
-				{
-					title: "Zelda",
-					id: "zelda",
-					author: "Ganondorf",
-					url:
-						"https://assets.breatheco.de/apis/sound/files/videogame/fx_zelda_recorder.wav"
-				},
-				{
-					title: "X-Men",
-					id: "x-men",
-					author: "Magneto",
-					url:
-						"https://assets.breatheco.de/apis/sound/files/cartoons/songs/x-men.mp3"
-				}
-			]
+			songs: [],
+			fx: []
 		};
 	}
 
@@ -91,14 +70,12 @@ export class Home extends React.Component {
 					<span className="controlIcons">
 						<i
 							className="playIcon fas fa-play"
-							ref={t => (this.playBtn = t)}
 							onClick={() => this.playSong()}
 						/>
 					</span>
 					<span className="controlIcons">
 						<i
 							className="pauseIcon fas fa-pause circle"
-							ref={t => (this.pauseBtn = t)}
 							onClick={() => this.pauseSong()}
 						/>
 					</span>
